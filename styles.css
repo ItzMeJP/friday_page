@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* Define theme colors */
+:root {
+    --primary-color: #094764; /* INESC TEC Blue */
+    --secondary-color: #0e6b96; /* Light Blue Accent */
+    --text-color: #1d284d;
+    --background-color: #f4f8fb;
+    --footer-background: #003e6b;
+}
+
+/* General Styling */
+body {
+    background: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-container img {
+    width: 200px; /* Adjusted for better balance */
+    height: auto;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--primary-color);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+/* Content Sections */
+.container {
+    max-width: 900px;
+}
+
+/* Video Navigation */
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prev-video { left: 10px; }
+#next-video { right: 10px; }
+
+/* Photo Carousel */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 30%;
+    transition: 0.3s;
+    opacity: 0.6;
+    filter: grayscale(80%);
+    margin: 0 10px;
+}
+
+.carousel-slide img.active {
+    width: 40%;
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prev-photo { left: 10px; }
+#next-photo { right: 10px; }
+
+/* Footer */
+footer {
+    background: var(--footer-background);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Robot Showcase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Friday Showcase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#video-section">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery-section">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#specifications-section">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white text-center py-5">
+        <div class="logo-container">
+            <img src="images/logos/INESCTECLogotipo_CORPositivo_RGB.png">
+            <img src="images/logos/image.png">
+        </div>
+        <h1>Welcome to the Friday Showcase</h1>
+        <p>Discover the power of innovation using MOMAs</p>
+    </header>
+
+    <!-- Video Gallery Section -->
+    <section id="video-section" class="container my-5 text-center">
+        <h2>Video Gallery</h2>
+        <div class="video-container">
+            <button id="prev-video" class="video-btn">❮</button>
+            <div class="ratio ratio-16x9">
+                <iframe id="video-frame" src="https://www.youtube.com/embed/6NWvCWHk114?si=5kOXZJxNlcR5Zkad" allowfullscreen></iframe>
+            </div>
+            <button id="next-video" class="video-btn">❯</button>
+        </div>
+    </section>
+
+    <!-- Photo Carousel -->
+    <section id="gallery-section" class="container my-5 text-center">
+        <h2>Photo Carousel</h2>
+        <div class="carousel-container">
+            <button id="prev-photo" class="carousel-btn">❮</button>
+            <div class="carousel-slide">
+                <!-- Images will be dynamically inserted here by JS -->
+            </div>
+            <button id="next-photo" class="carousel-btn">❯</button>
+        </div>
+    </section>
+    
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 Robot Showcase. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
