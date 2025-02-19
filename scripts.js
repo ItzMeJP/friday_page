@@ -34,9 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "friday_mission_automotive_3000x4000.jpeg",
         "friday_mission_fasten_3000x4000.jpeg",
         "friday_mission_logistics_3000x4000.jpeg",
-        "place.jpg",
-        "pick_rotated.jpg"
-    ];
+        "place.jpg"
+       ];
 
     const carouselSlide = document.querySelector(".carousel-slide");
 
