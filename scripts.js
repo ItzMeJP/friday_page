@@ -34,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "friday_mission_automotive_3000x4000.jpeg",
         "friday_mission_fasten_3000x4000.jpeg",
         "friday_mission_logistics_3000x4000.jpeg",
-        "place.jpg"
+        "place.jpg",
+        "grasp_candidate.png",
+        "segmentation_box.png",
+        "friday_onrobot_momaflex_00.jpg"
        ];
 
     const carouselSlide = document.querySelector(".carousel-slide");
